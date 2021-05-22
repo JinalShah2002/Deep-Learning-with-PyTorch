@@ -21,8 +21,8 @@ class NeuralNetwork:
         self.weights2 = np.random.random(size=(2, 1))
 
         # Defining the biases
-        self.b1 = np.random.random(size=(1, 1))
-        self.b2 = np.random.random(size=(1, 1))
+        self.b1 = np.array(1).reshape(1, 1)
+        self.b2 = np.array(1).reshape(1, 1)
 
     # Forward function
     # Note, I am assuming that X doesn't need any transformations such as flattening
